@@ -1,4 +1,4 @@
-[中文版文档](https://github.com/liaohuqiu/android-CLog/blob/master/README-cn.md)
+## [中文版文档](https://github.com/liaohuqiu/android-CLog/blob/master/README-cn.md)
 
 # A Simple Log Tool
 
@@ -81,11 +81,11 @@ CLog.d("sample", "Here is a debug message with parameters: %d", 1);
 ```
 
 
-### License
+# License
 
 Apache 2
 
-### Contact & Help
+# Contact & Help
 
 Please fell free to contact me if there is any problem when using the library.
 
