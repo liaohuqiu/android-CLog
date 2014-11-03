@@ -1,22 +1,20 @@
-[中文版文档](https://github.com/liaohuqiu/android-CLog/blob/master/README-cn.md)
+# 简单的日志工具
 
-# A Simple Log Tool
+对`android.util.Log`进行简单的封装, 提供以下功能
 
-An encapsulation of `android.util.Log`, which provides:
+* 日志级别控制
+    开发测试环境打印所有日志，内测包打印警告和报错日志，线上包只打印crash日志。
 
-* Log level control
-    You can display different log according different environment.
-
-* Log with parameters
+* 带参数打印
     ```
     CLog.d("sample", "Here is a debug message with parameters: %d", 1);
     ```
 
-# Import to your project
+# 引入到项目
 
-You can copy the source code to your source code directory, it only a single file.
+只有一个文件，所以你可以直接使用源码，放到你项目中。
 
-This library has been pushed to Maven Central, you can import it by pom or gradle.
+这个小类库也发布到了Maven中央库，可以通过pom或者gradle引入。
 
 #### Marven
 
@@ -35,7 +33,7 @@ This library has been pushed to Maven Central, you can import it by pom or gradl
 compile 'in.srain.cube:clog:1.0.1'
 ```
 
-# Usage
+# 使用
 
 #### Package
 
@@ -43,7 +41,7 @@ compile 'in.srain.cube:clog:1.0.1'
 import in.srain.cube.util.CLog;
 ```
 
-#### Log level
+#### 日志级别
 
 ```
 public static final int LEVEL_VERBOSE = 0;
@@ -54,26 +52,26 @@ public static final int LEVEL_ERROR = 4;
 public static final int LEVEL_FATAL = 5;
 ```
 
-Default log level is `LEVEL_VERBOSE`. The log whose log is lower than log level you set by calling `setLogLevel` will not been printed.
+默认是 `LEVEL_VERBOSE`，低于设定级别的日志将不会被打印。
+比如: 设定为: `LEVEL_INFO`, `CLog.d`, `CLog.v`的日志将不会执行。
 
-For example, you set log level to `LEVEL_INFO`, the log sent by `CLog.d` or `CLog.v` will not been print.
+#### 根据不同环境设置不同的日志级别
 
-#### Set log level according to the environment
 
 ```
 if (environment.equals("production")) {
-    // production
+    // 线上环境
     CLog.setLogLevel(CLog.LEVEL_ERROR);
 } else if (environment.equals("beta")) {
-    // beta
+    // 内测环境
     CLog.setLogLevel(CLog.LEVEL_WARNING);
 } else {
-    // development
+    // 开发环境
     CLog.setLogLevel(CLog.LEVEL_VERBOSE);
 }
 ```
 
-#### Print log
+#### 打印日志
 
 ```
 CLog.d("sample", "Here is a debug message");
@@ -85,9 +83,7 @@ CLog.d("sample", "Here is a debug message with parameters: %d", 1);
 
 Apache 2
 
-### Contact & Help
-
-Please fell free to contact me if there is any problem when using the library.
+### 联系方式和问题反馈
 
 * srain@php.net
 * twitter: https://twitter.com/liaohuqiu
