@@ -2,6 +2,11 @@ package in.srain.cube.util;
 
 import android.util.Log;
 
+/**
+ * An encapsulation of {@link Log}, enable log level and print log with parameters.
+ *
+ * @author http://www.liaohuqiu.net/
+ */
 public class CLog {
 
     public static final int LEVEL_VERBOSE = 0;

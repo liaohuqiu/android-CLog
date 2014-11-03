@@ -1,8 +1,11 @@
 ### A Simple Log Tool
 
-A wrap of `android.util.Log`
+An encapsulation of `android.util.Log`, which provides:
 
 * Log level control
+
+    You can display different log according different environment.
+
 * Log with parameters
 
 #### Marven
