@@ -20,13 +20,13 @@ A wrap of `android.util.Log`
 
 ``` groovy
 compile 'in.srain.cube:clog:1.0.1'
-`
+```
 
 #### Package
 
 ```java
 import in.srain.cube.util.CLog;
-`````
+```
 
 ### Usage
 
