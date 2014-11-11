@@ -18,7 +18,7 @@ You can copy the source code to your source code directory, it only a single fil
 
 This library has been pushed to Maven Central, you can import it by pom or gradle.
 
-#### Marven
+#### Maren
 
 ```xml
 <dependency>
