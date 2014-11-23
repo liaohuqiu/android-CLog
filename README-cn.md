@@ -23,14 +23,14 @@
     <groupId>in.srain.cube</groupId>
     <artifactId>clog</artifactId>
     <type>jar</type>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 </dependency>
 ```
 
 #### Gradle
 
 ``` groovy
-compile 'in.srain.cube:clog:1.0.1'
+compile 'in.srain.cube:clog:1.0.2'
 ```
 
 # 使用

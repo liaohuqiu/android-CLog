@@ -34,7 +34,7 @@ public class CLog {
      * @param msg
      */
     public static void v(String tag, String msg) {
-        if (sLevel >= LEVEL_VERBOSE) {
+        if (sLevel > LEVEL_VERBOSE) {
             return;
         }
         Log.v(tag, msg);
@@ -48,7 +48,7 @@ public class CLog {
      * @param throwable
      */
     public static void v(String tag, String msg, Throwable throwable) {
-        if (sLevel >= LEVEL_VERBOSE) {
+        if (sLevel > LEVEL_VERBOSE) {
             return;
         }
         Log.v(tag, msg, throwable);
@@ -62,7 +62,7 @@ public class CLog {
      * @param args
      */
     public static void v(String tag, String msg, Object... args) {
-        if (sLevel >= LEVEL_VERBOSE) {
+        if (sLevel > LEVEL_VERBOSE) {
             return;
         }
         if (args.length > 0) {
@@ -78,7 +78,7 @@ public class CLog {
      * @param msg
      */
     public static void d(String tag, String msg) {
-        if (sLevel >= LEVEL_DEBUG) {
+        if (sLevel > LEVEL_DEBUG) {
             return;
         }
         Log.d(tag, msg);
@@ -92,7 +92,7 @@ public class CLog {
      * @param args
      */
     public static void d(String tag, String msg, Object... args) {
-        if (sLevel >= LEVEL_DEBUG) {
+        if (sLevel > LEVEL_DEBUG) {
             return;
         }
         if (args.length > 0) {
@@ -109,7 +109,7 @@ public class CLog {
      * @param throwable
      */
     public static void d(String tag, String msg, Throwable throwable) {
-        if (sLevel >= LEVEL_DEBUG) {
+        if (sLevel > LEVEL_DEBUG) {
             return;
         }
         Log.d(tag, msg, throwable);
@@ -122,7 +122,7 @@ public class CLog {
      * @param msg
      */
     public static void i(String tag, String msg) {
-        if (sLevel >= LEVEL_INFO) {
+        if (sLevel > LEVEL_INFO) {
             return;
         }
         Log.i(tag, msg);
@@ -136,7 +136,7 @@ public class CLog {
      * @param args
      */
     public static void i(String tag, String msg, Object... args) {
-        if (sLevel >= LEVEL_INFO) {
+        if (sLevel > LEVEL_INFO) {
             return;
         }
         if (args.length > 0) {
@@ -152,7 +152,7 @@ public class CLog {
      * @param msg
      */
     public static void i(String tag, String msg, Throwable throwable) {
-        if (sLevel >= LEVEL_INFO) {
+        if (sLevel > LEVEL_INFO) {
             return;
         }
         Log.i(tag, msg, throwable);
@@ -165,7 +165,7 @@ public class CLog {
      * @param msg
      */
     public static void w(String tag, String msg) {
-        if (sLevel >= LEVEL_WARNING) {
+        if (sLevel > LEVEL_WARNING) {
             return;
         }
         Log.w(tag, msg);
@@ -179,7 +179,7 @@ public class CLog {
      * @param args
      */
     public static void w(String tag, String msg, Object... args) {
-        if (sLevel >= LEVEL_WARNING) {
+        if (sLevel > LEVEL_WARNING) {
             return;
         }
         if (args.length > 0) {
@@ -196,7 +196,7 @@ public class CLog {
      * @param throwable
      */
     public static void w(String tag, String msg, Throwable throwable) {
-        if (sLevel >= LEVEL_WARNING) {
+        if (sLevel > LEVEL_WARNING) {
             return;
         }
         Log.w(tag, msg, throwable);
@@ -209,7 +209,7 @@ public class CLog {
      * @param msg
      */
     public static void e(String tag, String msg) {
-        if (sLevel >= LEVEL_ERROR) {
+        if (sLevel > LEVEL_ERROR) {
             return;
         }
         Log.e(tag, msg);
@@ -223,7 +223,7 @@ public class CLog {
      * @param args
      */
     public static void e(String tag, String msg, Object... args) {
-        if (sLevel >= LEVEL_ERROR) {
+        if (sLevel > LEVEL_ERROR) {
             return;
         }
         if (args.length > 0) {
@@ -240,7 +240,7 @@ public class CLog {
      * @param throwable
      */
     public static void e(String tag, String msg, Throwable throwable) {
-        if (sLevel >= LEVEL_ERROR) {
+        if (sLevel > LEVEL_ERROR) {
             return;
         }
         Log.e(tag, msg, throwable);
@@ -253,7 +253,7 @@ public class CLog {
      * @param msg
      */
     public static void f(String tag, String msg) {
-        if (sLevel >= LEVEL_FATAL) {
+        if (sLevel > LEVEL_FATAL) {
             return;
         }
         Log.wtf(tag, msg);
@@ -267,7 +267,7 @@ public class CLog {
      * @param args
      */
     public static void f(String tag, String msg, Object... args) {
-        if (sLevel >= LEVEL_FATAL) {
+        if (sLevel > LEVEL_FATAL) {
             return;
         }
         if (args.length > 0) {
@@ -284,7 +284,7 @@ public class CLog {
      * @param throwable
      */
     public static void f(String tag, String msg, Throwable throwable) {
-        if (sLevel >= LEVEL_FATAL) {
+        if (sLevel > LEVEL_FATAL) {
             return;
         }
         Log.wtf(tag, msg, throwable);
