@@ -16,7 +16,7 @@
 
 这个小类库也发布到了Maven中央库，可以通过pom或者gradle引入。
 
-#### Maren
+#### Maven
 
 ```xml
 <dependency>
